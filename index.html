@@ -15,7 +15,7 @@
         document.getElementById('dataForm').addEventListener('submit', function(event) {
             event.preventDefault();
             const name = document.getElementById('name').value;
-            fetch('/submit', {
+            fetch('http://localhost:3000/submit', { // Укажите адрес вашего сервера
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -33,3 +33,4 @@
     </script>
 </body>
 </html>
+
